@@ -101,7 +101,7 @@ Next, install the Python libraries jupyter and matplotlib
 
 ~~~
 conda install matplotlib
-conda install jupyter
+conda install -c conda-forge notebook
 ~~~
 {: .language-bash}
 
