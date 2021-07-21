@@ -1,5 +1,5 @@
-. ---
-title: "Homework Assignment #1"
+---
+title: "Group Homework Assignment #1"
 teaching: 0
 exercises: 60
 questions:
@@ -8,13 +8,14 @@ objectives:
 - "Work with your team on a collaborative repository."
 - "Open a pull request."
 - "Review someone else's pull request."
-keypoints:
-- "You've now submitted a pull request and reviewed a pull request on a collaborative repo!"
 ---
 
 ## Homework
 
-For this homework assignment, you will be collaborating with your team on a GitHub pages site. You will update this site with reflections during the course of the bootcamp. Today, everyone should contribute to the site. In the future, you should rotate so that one person each day is writing a reflection or summary on that day's topic. 
+For this homework assignment, you will be collaborating with your team on a GitHub pages site. 
+You will update this site with reflections during the course of the bootcamp. 
+Today, everyone should contribute to the site. 
+In the future, you should rotate so that one person each day is writing a reflection or summary on that day's topic. 
 
 For today, you should interview and make a blog post about someone else on your team. Some questions you might think about...
 
@@ -25,7 +26,8 @@ For today, you should interview and make a blog post about someone else on your 
 1. What is one thing the two of you have in common (that isn't the MSSE program)?
 1. Why did they choose the MSSE degree?
 
-You have been added as a collaborator to a repository. Follow the instructions on the sample blog to make your first update and submit a pull request. Everyone add a blog post.
+You have been added as a collaborator to a repository. 
+Follow the instructions on the sample blog to make your first update and submit a pull request. Everyone add a blog post.
 
 ### Team 1
 1. Team members will be listed here.
