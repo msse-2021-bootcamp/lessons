@@ -13,29 +13,49 @@ keypoints:
 ---
 
 ## Putting your repository on GitHub.
-Now, let's put this project on GitHub so that we can share it with others. In your browser, navigate to `github.com`. Log in to you account if you are not already logged in. On the left side of the page, click the green button that says `New` to create a new repository. Give the repository the name `git-lesson`.
+Now, let's put this project on GitHub so that we can share it with others. 
+In your browser, navigate to `github.com`. 
+Log in to you account if you are not already logged in. 
+On the left side of the page, click the green button that says `New` to create a new repository. 
+Give the repository the name `git-lesson`.
 
-Note for the last question, "Initialize this repository with a README". We will leave this unchecked in our case because we have an existing repository (as described by GitHub, "This will let you immediately clone the repository to your computer. Skip this step if you’re importing an existing repository."). If you were creating the repository on GitHub, you would select this. Sometimes it is more convenient to do this than to initialize the repository locally because of the inclusion of these extra files.
+Note for the last question, "Initialize this repository with a README". 
+We will leave this unchecked in our case because we have an existing repository 
+(as described by GitHub, "This will let you immediately clone the repository to your computer. 
+Skip this step if you’re importing an existing repository."). 
+If you were creating the repository on GitHub, you would select this. 
+Sometimes it is more convenient to do this than to initialize the repository locally because of the inclusion of these extra files.
 
 Click `Create repository`.
 
 Now, GitHub very helpfully gives us directions for how to get our code on GitHub.
 
-Before we follow these directions, let's look at a few things in the repository. When you want to be able to put your code online in a repository, you have to tell the `git` software that you have an online repostiry and where it is located. Git calls these `remotes`. Currently, our repository has no remotes. See this by typing
+Before we follow these directions, let's look at a few things in the repository. 
+When you want to be able to put your code online in a repository, you have to tell the `git` software that you have an online repository and where it is located. 
+Git calls these `remotes`. 
+Currently, our repository has no remotes. 
+See this by typing
 
 ~~~
 $ git remote -v
 ~~~
 {: .language-bash}
 
-You should see no output. Now, follow the instructions on GitHub under "...or push an existing repository from the command line"
+You should see no output. 
+Now, follow the instructions on GitHub under "...or push an existing repository from the command line"
+
 ~~~
 $ git remote add origin https://github.com/YOUR_GITHUB_USERNAME/git-lesson.git
-$ git push -u origin master
+$ git push -u origin main
 ~~~
 {: .language-bash}
 
-The first command adds a remote named `origin` and sets the URL to our repository. The word `origin` here is simply a word that is a shortcut for the location of our repository. We could have called it anything (like `banana` or `elephant`, or anything we wanted), but `origin` is used by convention. Now, whenever we say `origin`, git knows that we really mean `https://github.com/YOUR_GITHUB_USERNAME/git-lesson.git`. The second command copies (or "pushes") everything which we have tracked using git to `origin`. The word `master` means we are pushing the `master` branch. 
+The first command adds a remote named `origin` and sets the URL to our repository. 
+The word `origin` here is simply a word that is a shortcut for the location of our repository. 
+We could have called it anything (like `banana` or `elephant`, or anything we wanted), but `origin` is used by convention. 
+Now, whenever we say `origin`, git knows that we really mean `https://github.com/YOUR_GITHUB_USERNAME/git-lesson.git`. 
+The second command copies (or "pushes") everything which we have tracked using git to `origin`. 
+The word `main` means we are pushing the `main` branch. 
 
 Now if you refresh the GitHub webpage you should be able to see all of the new files you added to the repository.
 
@@ -58,8 +78,8 @@ $ git status
 {: .bash}
 
 ~~~
-On branch master
-Your branch is up to date with 'origin/master'.
+On branch main
+Your branch is up to date with 'origin/main'.
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -71,9 +91,14 @@ nothing added to commit but untracked files present (use "git add" to track)
 ~~~
 {: .output}
 
-Now we will make Git stop telling us about these files. We do this with a file called `.gitignore`. A `.gitignore` does what it sounds like - it tells `git` files or directories to ignore. If we can created our repository on GitHub and cloned it to our computer, we could have selected to create the repository with a `.gitignore.` We could have told `GitHub` what language we were planning to use, and it would have given us a starting `.gitignore` with files we would be likely to want to ignore. 
+Now we will make Git stop telling us about these files.
+We do this with a file called `.gitignore`. 
+A `.gitignore` does what it sounds like - it tells `git` files or directories to ignore. 
+If we can created our repository on GitHub and cloned it to our computer, we could have selected to create the repository with a `.gitignore.` 
+We could have told `GitHub` what language we were planning to use, and it would have given us a starting `.gitignore` with files we would be likely to want to ignore. 
 
-Navigate [here](https://github.com/github/gitignore/blob/master/Python.gitignore) to get a good starting gitignore for python. Copy the contents of this file to a file in your repository called `.gitignore`.
+Navigate [here](https://github.com/github/gitignore/blob/main/Python.gitignore) to get a good starting gitignore for python. 
+Copy the contents of this file to a file in your repository called `.gitignore`.
 
 Look at the contents of `.gitignore`
 
@@ -133,7 +158,8 @@ Add the following to the end of `.gitignore`:
 *~
 ~~~
 
-Now do "git status" again. Notice that the files we added are no longer recognized by git.
+Now do "git status" again. 
+Notice that the files we added are no longer recognized by git.
 
 ~~~
 $ git status
@@ -141,8 +167,8 @@ $ git status
 {: .bash}
 
 ~~~
-On branch master
-Your branch is up to date with 'origin/master'.
+On branch main
+Your branch is up to date with 'origin/main'.
 
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
