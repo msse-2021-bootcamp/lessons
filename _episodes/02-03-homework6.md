@@ -31,17 +31,17 @@ Team A
 1. Jasmine
 1. Camille
 1. Angela  
-[Repository](https://github.com/msse-2020-bootcamp/cpp-riemann-teamA)
+[Repository](https://github.com/msse-2021-bootcamp/cpp-riemann-teamA)
 
 Team B
 1. Ron 
 1. Thenuka  
-[Repository](https://github.com/msse-2020-bootcamp/cpp-riemann-teamB)
+[Repository](https://github.com/msse-2021-bootcamp/cpp-riemann-teamB)
 
 Team C
 1. Muhan
 1. Xudong  
-[Repository](https://github.com/msse-2020-bootcamp/cpp-riemann-teamC)
+[Repository](https://github.com/msse-2021-bootcamp/cpp-riemann-teamC)
 
 The best way to do this assignment is for one person to share their screen
 and write the code while discussing the questions; the rest of the group

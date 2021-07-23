@@ -13,7 +13,7 @@ questions:
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
 		var adobeDCView = new AdobeDC.View({clientId: "42179037890c48539eb91dc14951e000", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
-			content:{location: {url: "https://msse-2020-bootcamp.github.io/lessons/files/msse-intro.pdf"}},
+			content:{location: {url: "https://msse-2021-bootcamp.github.io/lessons/files/msse-intro.pdf"}},
 			metaData:{fileName: "msse-intro.pdf"}
 		}, {embedMode: "SIZED_CONTAINER"});
 	});

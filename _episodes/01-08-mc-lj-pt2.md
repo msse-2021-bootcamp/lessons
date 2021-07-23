@@ -21,7 +21,7 @@ keypoints:
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
 		var adobeDCView = new AdobeDC.View({clientId: "42179037890c48539eb91dc14951e000", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
-			content:{location: {url: "https://msse-2020-bootcamp.github.io/lessons/files/mc-lj-part2.pdf"}},
+			content:{location: {url: "https://msse-2021-bootcamp.github.io/lessons/files/mc-lj-part2.pdf"}},
 			metaData:{fileName: "msse-lj-part2.pdf"}
 		}, {embedMode: "SIZED_CONTAINER"});
 	});
