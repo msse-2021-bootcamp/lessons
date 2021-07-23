@@ -15,11 +15,11 @@ keypoints:
 </script>
 
 <center>
-<div id="adobe-dc-view" style="width: 800px; height: 800px;"></div>
+<div id="adobe-dc-view" style="width: 1280px; height: 720px;"></div>
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 <script type="text/javascript">
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-		var adobeDCView = new AdobeDC.View({clientId: "fcecf2e7adab4e76874a9bb555d8c036", divId: "adobe-dc-view"});
+		var adobeDCView = new AdobeDC.View({clientId: "42179037890c48539eb91dc14951e000", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
 			content:{location: {url: "https://msse-2020-bootcamp.github.io/lessons/files/mc-lj-part2.pdf"}},
 			metaData:{fileName: "msse-lj-part2.pdf"}
