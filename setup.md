@@ -7,7 +7,7 @@ Participation in the MSSE Bootcamp will require use of your own personal compute
 
 Please follow the instructions given here to make sure you have the necessary software installed. We will be using Python and the conda package manager from Anaconda. If you are on MacOS or Linux and you already have Anaconda (or miniconda) installed, skip to the compilers portion of these set-up instructions. If you do not have Anaconda or miniconda installed please see the appropriate section below.
 
-First see the appropriate section in the Operating System Specific Instructions, then everyone should do the portion in "Installation Instructions for Everyone".
+First see the appropriate section in the section [Operating System Specific Instructions](#operating-system-specific-installation-instructions), then everyone should do the portion in [Installation Instructions for Everyone](#installation-instructions-for-everyone).
 
 ## Operating System Specific Installation Instructions
 Pick the appropriate operating system and follow these instuctions
@@ -18,6 +18,7 @@ Pick the appropriate operating system and follow these instuctions
 ## Installation Instructions for Everyone
 1. [Creating a conda environment - ALL USERS](#creating-a-conda-environment)
 1. [Setting up and configuring git - ALL USERS](#installing-and-configuring-git)
+1. [Making a GitHub Account and setting up an SSH key - ALL USERS](#github)
 1. [Installing a text editor - ALL USERS](#text-editor)
 
 ## Mac OS
@@ -28,7 +29,7 @@ You can download and run the installer at this [link](https://docs.conda.io/en/l
 ### Compilers
 MacOS users should [install XCode](https://developer.apple.com/xcode/). An easy way to install XCode is through the [Mac App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12).
 
-After installing XCode, proceed to the next section [Creating a MSSE Bootcamp conda environment](#creating-a-msse-bootcamp-conda-environment).
+After installing XCode, proceed to the next section [Creating a MSSE Bootcamp conda environment](#creating-a-conda-environment).
 
 ## Linux
 
@@ -85,7 +86,7 @@ After installing miniconda, type the following command into your terminal. This 
 
 
 ~~~
-conda create -n msse-python python=3.7
+conda create -n msse-python python=3.9
 ~~~
 {: .language-bash}
 
@@ -100,7 +101,7 @@ Next, install the Python libraries jupyter and matplotlib
 
 ~~~
 conda install matplotlib
-conda install jupyter
+conda install -c conda-forge notebook
 ~~~
 {: .language-bash}
 
@@ -126,10 +127,20 @@ conda activate msse-python
 ~~~
 {: .language-bash}
 
-Next, install `git`
+Next, make sure you have git installed.
+
+You can check if git is installed using the following command in your terminal:
 
 ~~~
-conda install git
+git --version
+~~~
+{: .bash}
+
+Make sure that this outputs at least version 2.28. If you do not have git installed, or if it is an older version of git, 
+you can install git using conda:
+
+~~~
+conda install -c conda-forge git
 ~~~
 {: .language-bash}
 
@@ -144,9 +155,18 @@ Most importantly, it makes it easier to figure out who to blame when something g
 You can provide git your name and contact information with the following commands:
 
 ~~~
-git config --global user.name "<Firstname> <Lastname>"
-git config --global user.email "<email address>"
+git config --global user.name "YOUR_FIRSTNAME YOUR_LASTNAME"
+git config --global user.email "YOUR_EMAIL_ADDRESS"
 ~~~
+
+Next, you will need to set the name of the default branch git uses.
+We will discuss in more detail during the bootcamp.
+The following command will set your default branch name to be "main"
+
+~~~
+git config --global init.defaultBranch main
+~~~
+{: .bash}
 
 Next, you might want to change the Git text editor.
 As we will see later, certain Git commands will open text files.
@@ -158,14 +178,30 @@ Everyone can use Vim as a text editor, but you can set it to your preference. **
 ~~~
 $ git config --global core.editor "vim"
 ~~~
+{: .bash}
 
 A more complete list of possible editors is available [here](http://swcarpentry.github.io/git-novice/02-setup/index.html).
 
 You can check the configuration commands that you have set using:
 
 ~~~
-git config --list
+$ git config --list
 ~~~
+{: .bash}
+
+## GitHub
+
+If you do not yet have a GitHub account, you will need to create one.
+To create an account, navigate to [github.com](https://github.com/), and click "Sign up". 
+When creating your GitHub username, remember that this is a professional profile where you can showcase your work.
+Keeping this in mind, make sure that your GitHub username is both **professional** and **recognizable**.
+
+### GitHub Credentials
+We will be using the command line interface for GitHub. 
+GitHub *very recently* deprecated using a username and password from the command line.
+Instead, you will need to create something called an ssh key to verify your account.
+
+Follow the [instructions given by GitHub](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) to create an SSH key and add it to your account.
 
 ## Text Editor
 Everyone should have a text editor they can use to edit Python. If you do not have a preference for text editors, we recommend [Visual Studio Code](https://code.visualstudio.com/). If you are using WSL, see [these instructions](https://code.visualstudio.com/docs/remote/wsl) for installing Visual Studio Code for use with WSL
