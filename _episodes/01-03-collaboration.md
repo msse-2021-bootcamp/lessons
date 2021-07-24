@@ -32,7 +32,7 @@ Click the "Manage access" tab on the left.
 This will bring up a page where you can see some details about your repository. 
 The box under the heading "Manage access" will allow you to invite collaborators to your project.
 
-A pop up with a search bar will appear where you can search for the names of other github users.
+A pop up with a search bar will appear where you can search for the names of other GitHub users.
 By finding someone using the search bar and then clicking "Add collaborator", you can allow specific people to contribute to your project.
 Generally speaking, you should only list someone as a collaborator if you work with them closely and trust that they won't do anything especially unwise with your repository.
 
@@ -41,12 +41,20 @@ Adding them to the repository as a collaborator will allow them to push to the r
 People you don't know very well shouldn't be listed as collaborators, but there are still ways for them to contribute improvements to your project.
 
 ### Protecting your main Branch
-If you choose to work with collaborators, there are still ways for you to protect your code. Click the "Branches" tab. You will see a heading which says "Branch protection rule". Adding the name of a branch here will make it a "protected branch" and the rules you choose in the section below will protect the branch (under the heading "protect matching branches"). For example, you may want to choose to protect the `main` branch so that pull requests and reviews are required to change the branch. This way, your collaborators will not be able to push to the main branch, and must submit a `pull request` more on this later in order for their changes to be incorporated. You can read more about branch protection [here](https://help.github.com/en/enterprise/2.18/admin/developer-workflow/configuring-protected-branches-and-required-status-checks#enabling-a-protected-branch-for-a-repository).
+If you choose to work with collaborators, there are still ways for you to protect your code. 
+Click the "Branches" tab. 
+You will see a heading which says "Branch protection rule". 
+Adding the name of a branch here will make it a "protected branch" and the rules you choose in the section below will protect the branch (under the heading "protect matching branches"). 
+For example, you may want to choose to protect the `main` branch so that pull requests and reviews are required to change the branch. 
+This way, your collaborators will not be able to push to the main branch, and must submit a `pull request` more on this later in order for their changes to be incorporated. 
+You can read more about [branch protection](https://help.github.com/en/enterprise/2.18/admin/developer-workflow/configuring-protected-branches-and-required-status-checks#enabling-a-protected-branch-for-a-repository).
 
 ### Pull Requests - Branch and Pull Request (PR)
-Protecting your main branch will require contributors to submit their changes through a process called a Pull Request. As the repository owner, you can also change the code through a pull request on GitHub.
+Protecting your main branch will require contributors to submit their changes through a process called a Pull Request. 
+As the repository owner, you can also change the code through a pull request on GitHub.
 
-Previously, we discussed that all changes should take place on branches. This is still true, however, we are now going to incorporate those changes through a pull request on GitHub rather than through a merge.
+Previously, we discussed that all changes should take place on branches. 
+This is still true, however, we are now going to incorporate those changes through a pull request on GitHub rather than through a merge.
 
 Create a new branch in your repository to make a small change.
 
@@ -58,7 +66,8 @@ $ git switch -c collab_instructions
 Add the following to your README and commit the change.
 
 ~~~
-To submit your feature to be incorporated to the main branch, you should submit a `Pull Request`. The repository maintainers will review your pull request before accepting your changes.
+To submit your feature to be incorporated to the main branch, you should submit a `Pull Request`. 
+The repository maintainers will review your pull request before accepting your changes.
 ~~~
 
 ~~~
@@ -115,7 +124,13 @@ During this section, we will all start from central repository where we are list
 We will leave the package we are developing for this section.
 
 Navigate to the URL https://github.com/msse-2021-bootcamp/periodic-table in your web browser. 
-You should see a GitHub repo. This repository contains code to make a website which has the periodic table. View the website https://msse-2021-bootcamp.github.io/periodic-table/ . On the website page, elements which appear with a blue background and gold text have a page and information filled in. You can read more about each element by clicking on it. Elements with a white background do not yet have a page. Take a minute or two to click around. 
+You should see a GitHub repo. 
+This repository contains code to make a website which has the periodic table. 
+View the website https://msse-2021-bootcamp.github.io/periodic-table/ . 
+On the website page, elements which appear with a blue background and gold text have a page and information filled in. 
+You can read more about each element by clicking on it. 
+Elements with a white background do not yet have a page. 
+Take a minute or two to click around. 
 
 You have all been added as collaborators to the project, so you can make changes. 
 However, the `main` branch has been protected by the the repository owners so that you cannot push to main. 
@@ -154,7 +169,8 @@ Pick an element you would like to add information about.
 Create an issue on the central repository to let everyone else know you are planning to add a feature.
 
 Create a new branch in your repo with your element of choice. 
-For this demo, I will be editing the sodium page. You should choose another element. 
+For this demo, I will be editing the sodium page. 
+You should choose another element. 
 This can either be an element that exists (blue background), or an element that doesn't exist yet (white background).
 
 ~~~

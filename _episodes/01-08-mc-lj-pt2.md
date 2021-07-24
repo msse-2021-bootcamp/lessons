@@ -15,7 +15,7 @@ keypoints:
 </script>
 
 <center>
-<div id="adobe-dc-view" style="width: 1280px; height: 720px;"></div>
+<div id="adobe-dc-view" style="width: 1000px; height: 565px;"></div>
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 <script type="text/javascript">
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 

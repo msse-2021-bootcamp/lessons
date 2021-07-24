@@ -19,7 +19,7 @@ For example, consider a particle at the origin. To calculate RDF, you consider a
 
 <img src="../fig/rdf_schematic.svg" height="400">
 
-A sample radial distribution function for a fluid is shown below. A peak indicattes a higher probability of particles being located at that distance. This graph shows that particles in a fluid will have neighboring particles (the peak), and then the RDF will flatten out to a constant value. The radial distribution function is typically normalized so that this value is equal to 1 (as shown in the plot below).
+A sample radial distribution function for a fluid is shown below. A peak indicates a higher probability of particles being located at that distance. This graph shows that particles in a fluid will have neighboring particles (the peak), and then the RDF will flatten out to a constant value. The radial distribution function is typically normalized so that this value is equal to 1 (as shown in the plot below).
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Lennard-Jones_Radial_Distribution_Function.svg" height="400">
 
