@@ -170,7 +170,7 @@ you can use the same command from above `git --version` to see what version has 
 If the output of that command is < 2.28 you will want to use the following command to specify the version to install. Any version >=2.28 is acceptable.
 
 ~~~
-conda install -c conda-forge git=2.28
+conda install -c conda-forge git"=>2.28"
 ~~~
 
 ### Configuring Git
@@ -239,7 +239,6 @@ Follow the [instructions given by GitHub](https://docs.github.com/en/github/auth
 
 ## Text Editor
 Everyone should have a text editor they can use to edit Python. If you do not have a preference for text editors, we recommend [Visual Studio Code](https://code.visualstudio.com/). If you are using WSL, see [these instructions](https://code.visualstudio.com/docs/remote/wsl) for installing Visual Studio Code for use with WSL.
-
 
 
 
