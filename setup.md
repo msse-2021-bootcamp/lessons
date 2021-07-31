@@ -164,6 +164,15 @@ conda install -c conda-forge git
 ~~~
 {: .language-bash}
 
+Note that because of the solver that conda uses to decide which version of a package to install you may end up with a version that is < 2.28. 
+you can use the same command from above `git --version` to see what version has been installed.
+
+If the output of that command is < 2.28 you will want to use the following command to specify the version to install. Any version >=2.28 is acceptable.
+
+~~~
+conda install -c conda-forge git=2.28
+~~~
+
 ### Configuring Git
 
 The first time you use Git on a particular computer, you need to configure some things.
