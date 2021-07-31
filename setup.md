@@ -172,7 +172,7 @@ If the output of that command is < 2.28 you will want to use the following comma
 ~~~
 conda install -c conda-forge git"=>2.28"
 ~~~
-
+{: .language-bash}
 ### Configuring Git
 
 The first time you use Git on a particular computer, you need to configure some things.
@@ -239,7 +239,6 @@ Follow the [instructions given by GitHub](https://docs.github.com/en/github/auth
 
 ## Text Editor
 Everyone should have a text editor they can use to edit Python. If you do not have a preference for text editors, we recommend [Visual Studio Code](https://code.visualstudio.com/). If you are using WSL, see [these instructions](https://code.visualstudio.com/docs/remote/wsl) for installing Visual Studio Code for use with WSL.
-
 
 
 
