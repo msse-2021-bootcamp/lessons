@@ -68,12 +68,19 @@ After this command has completed, proceed to the next section [Creating a MSSE B
 ## Windows
 If your computer uses the Windows operating system, we require installing Windows Subsystem for Linux (WSL). Follow the installation instructions at [this link](https://docs.microsoft.com/en-us/windows/wsl/install-win10). If you don’t have a preference on Linux distribution, we recommend installing Ubuntu 20.04. 
 
-Once WSL is installed, open your ‘Start’ menu and choose ‘Ubuntu’. This should open a terminal window. The first time you have opened Ubuntu, you may see a message which says “Installing, this may take a few minutes…”. After the installation is done, you will have to create a username and password. After these are created, you should be able to use the terminal.
+Once WSL is installed, open your ‘Start’ menu and choose ‘Ubuntu’. This will open a terminal window. 
+A terminal is an interface you can use to interact with your computer using text.
+The first time you have opened Ubuntu, you may see a message which says “Installing, this may take a few minutes…”. 
+After the installation is done, you will have to create a username and password. After these are created, you should be able to use the terminal.
 
 The Windows Subsystem for Linux is like running another computer inside your computer. It is a different operating system and has different software installed than your Windows computer. For the WSL, you have to install miniconda from the terminal in your Linux operating system. Note that if you if you are using the WSL, your Linux OS is completely separated from your Windows operating system. This means that software installed on one operating system is not available in the other.
 
 ### WSL Miniconda Installation
-You are now using a Linux OS under Windows. You must install miniconda from the command line. From your terminal execute the following lines:  
+You are now using a Linux OS under Windows. You must install miniconda from the command line. 
+You should [open a terminal](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).
+If you are using WSL, a terminal is opened when you click your Linux Operating System from the start menu.
+
+From your terminal execute the following lines:  
 ~~~
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
