@@ -151,7 +151,6 @@ This will move you back to your home directory.
 > If you use the `cd` command followed by no path, you will always be returned to your home directory.
 {: .callout}
 
-
 > ## Check Your Understanding
 > Match each command with its definition.  
 > 1. `cd`  
@@ -170,6 +169,35 @@ This will move you back to your home directory.
 >> (4) `mkdir` matches #2, "creates a directory."  
 > {: .solution}
 {: .challenge}
+
+Other commands which will be useful to you are `mv` which is used for moving files from one place to another, and `cp` for copying files from one place to another. For example, you can create a copy of your README.md file:
+
+~~~
+$ cp chem_280/README.md .
+~~~
+{: .language-bash}
+
+This command will create a copy of the README.md file in your current directory. 
+The dot (`.`) is a short-cut for your current directory. 
+In this case, the created file will have the same name as the one you copied it from.
+You could also give the file another name:
+
+~~~
+$ cp chem_280/README.md README_copy.md
+~~~
+{: .language-bash}
+
+The `mv` command behaves the same way except that the original file is removed.
+
+You can remove a file using the `rm` command.
+Let's get rid of those copies we just made:
+
+~~~
+$ rm README.md
+$ rm README_copy.md
+~~~
+{: .language-bash}
+
 
 > ## Challenge
 > Navigate to your `chem_280` directory and list the directory contents.
