@@ -1,5 +1,5 @@
 ---
-title: "Creating a Simple Python Packag"
+title: "Creating a Simple Python Package"
 teaching: 0
 exercises: 45
 start: true
@@ -445,9 +445,9 @@ This will return your Python PATH to you.
 You will see your current directory, as well as a PATH containing "site-packages".
 This folder is where all of your packages are installed.
 
-Python has two built-in packaging systems (distutils and setup tools) which are [designed to make it easy for others to create packages](https://packaging.python.org/).
-In fact, when you use `pip install`, you are installing packages which were created with Python's packaging capabilities.
-Python's [distutils] easily adds packages to your PYTHONPATH.
+Python's built-in packaging system is called [distutils](https://docs.python.org/3/library/distutils.html). However, this tool is largely unused today in favor of [setuptools](https://setuptools.readthedocs.io/en/latest/).
+`Setuptools` enhances distutils, and is also bundled with `pip`.
+There are [a number of packages related to Python packaging](https://packaging.python.org/key_projects/).
 
 For our exercise, we will do a local, or development install.
 If you develop and distribute packages in the future, you will need to follow slightly different procedures.
@@ -458,13 +458,16 @@ To create a package and add it to your PATH, you just need to create a `setup.py
 Note that the package we show here is **very** minimal.
 Usually packages are much more complicated.
 
-Create a `setup.py` file in the top level of your folder and add the following text:
+Create a `setup.py` file in the top level of your folder and add the following text, modified with your name. 
+This is a modified version of the setup.py file in the [Python packaging tutorial](https://packaging.python.org/tutorials/packaging-projects/).
+
+You can find a more in-depth sample [setup.py](https://github.com/pypa/sampleproject/blob/main/setup.py) in the Python Packaging Authority's sample project.
 
 ~~~
 import setuptools
 
 setuptools.setup(
-    name="mcsim",
+    name="mcsim-yourname",
     version="0.0.1",
     author="Your Name",
     author_email="author@example.com",
@@ -486,6 +489,10 @@ setuptools.setup(
 {: .language-python}
 
 This is a file which tells Python setuptools how to install your package.
+Note that if you plan to actually ever upload this package to the [Python Package Index (PyPI)](https://pypi.org/),
+this name would need to be unique.
+Since we want to be able to impor
+
 Next, do a development install of your project:
 
 ~~~
@@ -495,5 +502,6 @@ $ pip install -e .
 
 The `-e` means "editable" mode. 
 We are using it because we want the changes we make in our package to be reflected.
+If you check your site packages folder, you will see your package
 
-You will now be able to import the package from anywhere on your computer.
+You will now be able to import the package from anywhere on your computer. 
