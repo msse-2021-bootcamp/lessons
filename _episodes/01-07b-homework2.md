@@ -18,7 +18,7 @@ keypoints:
 ## Group Blog
 Read the information in this section and take 15 minutes or so to discuss as a group. Discussion of periodic boundaries and cutoffs should be included in your daily blog.
 
-## Periodic Boundaries and Simulation Cut Offs
+## Discussion - Periodic Boundaries and Simulation Cut Offs
 
 Tomorrow, we will write the Monte Carlo loop for our simulation. 
 In order to make the simulation run in a somewhat reasonable amount of time, we will have to use a few computational tricks.
@@ -71,6 +71,26 @@ Consider the following questions:
 1. What is the actual distance of our example? (`(0, 0, 0)`, `(0, 0, 8)`)
 
 ## Group Coding Exercises
+
+To start, one group member should submit a pull request with their copy of the code from class.
+This group member's code should be clean and working.
+You should use this as a starting point if your problem requires functions written in class.
+
+This homework focuses on computational "tricks" that are used to more effectively model a bulk system.
+We employ a distance cut-off to greatly reduce the number of calcuations, while periodic boundaries, allows us to simulate an "infinite" system.
+
+Each group member should submit a file with their problem solved.
+Put your homework solutions in the subdirectory "homework" under "day1".
+
+> ## Minimizing git conflicts
+> The best way to minimize the likeliehood of of conflicts appearing
+> is to have each group member work on different files, even if this
+> results in repeated code. 
+> There are better strategies to minimize conflict that have to do 
+> with project structure or management.
+> We don't know those strategies yet, so for now, each group member
+> should submit a different file for their task.
+{: .callout}
 
 For this portion of the homework, you will work as a group. 
 You have each been added to a collaborative repository with your group members. 
@@ -162,6 +182,7 @@ $$
 
 1. Write a function `calculate_tail_correction` which calculates the tail correction.
     - Write an `assert` statement to check against the reported value from [NIST](https://www.nist.gov/mml/csd/chemical-informatics-research-group/lennard-jones-fluid-reference-calculations). The value you are looking for is $$U_{LRC}$$. We were using `Configuration 1` in class.
+1. **Answer this question** - How many pairwise energy calculations do we do without a cut-off? How many do we do with a cut-off of $3\sigma$? What about $4\sigma$?
 
 ### Periodic boundaries
 

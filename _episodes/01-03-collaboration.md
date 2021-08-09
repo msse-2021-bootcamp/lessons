@@ -302,9 +302,19 @@ Submit the pull request.
 
 Now, your collaborators can review your material, and request changes if they feel it necessary. 
 
-Anyone can see Pull Requests on public repositories. 
-Try reviewing a few pull requests on the periodic table repository. You can leave comments/reactions. 
-Take a few minutes to review someone else's pull request.
+You should find one other student's pull request.
+You can view the diffs for the files which were changed by clicking the "Files changed" tab.
+From here, you can make comments on particular lines, or start a code review.
+Take some time to review another student's pull request.
+Consider the following:
+1. Did they use the right page format?
+1. Is their file name correct?
+1. Did they add information about the element?
+
+If all three of these things are done, approve the pull request.
+If there are any mistakes, let the person know, and "request changes" on their pull request.
+
+If you requested changes, they should address those, and tag you for review again.
 
 Once your pull request has been accepted and merged, main will have the changes you made. 
 
@@ -330,6 +340,7 @@ If you are done working with your feature branch, you can now delete it.
 ~~~
 $ git branch -d sodium
 ~~~
+{: .language-bash}
 
 The `-d` option means to delete the branch.
 

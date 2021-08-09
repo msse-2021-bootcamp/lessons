@@ -45,15 +45,18 @@ Follow the instructions on the sample blog to make your first update and submit 
 
 Tomorrow we will start writing a program to do a simulations of a chemical system. 
 To check our work, we will be comparing the results of our code to benchmarks presented by the National Institute of Standards and Technology (NIST). 
-Please visit [this page](https://www.nist.gov/mml/csd/chemical-informatics-research-group/lennard-jones-fluid-reference-calculations) and download the files linked at `gzipped tarball archive`. 
-Save this file. 
-The file should have a `.tar` extension. 
-If it does not, (on Mac sometimes it seems to download ending in `-tar`), change the file extension then unzip the file. 
-Put the unzipped folder in the directory where you are keeping files for this bootcamp. 
-Make sure the name of the folder is `lj_sample_configurations`.
 
-If you are on Windows in the WSL, you will need to obtain the files using the command line. Everyone should be able to use the command line, whether you are on Mac, Linux, or WSL. Navigate to your `msse-bootcamp` folder:
+You can obtain the files we will use for comparison using the command line.  Navigate to your `chem_280` folder, and make a directory for NIST data.
 
+~~~
+$ cd
+$ cd chem_280
+$ mkdir NIST_data
+$ cd NIST_data
+~~~
+{: .language-bash}
+
+Then, download data from NIST:
 ~~~
 wget https://www.nist.gov/document/ljsampleconfigurations-targz
 tar -xzvf ljsampleconfigurations-targz

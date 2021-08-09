@@ -7,6 +7,20 @@ questions:
 - "How can I navigate files and directories on the command line?"
 ---
 
+<center>
+<div id="adobe-dc-view" style="width: 1000px; height: 565px;"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script type="text/javascript">
+	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+		var adobeDCView = new AdobeDC.View({clientId: "42179037890c48539eb91dc14951e000", divId: "adobe-dc-view"});
+		adobeDCView.previewFile({
+			content:{location: {url: "https://msse-2021-bootcamp.github.io/lessons/files/day-1-topics.pdf"}},
+			metaData:{fileName: "day-1-topics.pdf"}
+		}, {embedMode: "SIZED_CONTAINER"});
+	});
+</script>
+ </center><br><br>
+
 In this course, we will be navigating files and using git using the command line. 
 The Linux command line is a text interface to your computer. 
 When you use the command line, you use something called a shell.
@@ -201,8 +215,6 @@ $ rm README_copy.md
 
 > ## Challenge
 > Navigate to your `chem_280` directory and list the directory contents.
-> Then list the directory contents.
-> Finally, navigate back to your home directory.
 >> ## Solution 
 >> The commands you should execute are 
 >> ~~~

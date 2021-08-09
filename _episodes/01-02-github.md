@@ -45,7 +45,8 @@ You should see no output.
 Now, follow the instructions on GitHub under "...or push an existing repository from the command line"
 
 ~~~
-$ git remote add origin https://github.com/YOUR_GITHUB_USERNAME/git-lesson.git
+$ git remote add origin git@github.com:jgithub.com/YOUR_GITHUB_USERNAME/git-lesson.git
+git branch -M main
 $ git push -u origin main
 ~~~
 {: .language-bash}
@@ -53,8 +54,9 @@ $ git push -u origin main
 The first command adds a remote named `origin` and sets the URL to our repository. 
 The word `origin` here is simply a word that is a shortcut for the location of our repository. 
 We could have called it anything (like `banana` or `elephant`, or anything we wanted), but `origin` is used by convention. 
-Now, whenever we say `origin`, git knows that we really mean `https://github.com/YOUR_GITHUB_USERNAME/git-lesson.git`. 
-The second command copies (or "pushes") everything which we have tracked using git to `origin`. 
+Now, whenever we say `origin`, git knows that we really mean `git@github.com/YOUR_GITHUB_USERNAME/git-lesson.git`. 
+The second command renames your branch to `main` if that is not already your default branch name.
+The third command copies (or "pushes") everything which we have tracked using git to `origin`. 
 The word `main` means we are pushing the `main` branch. 
 
 Now if you refresh the GitHub webpage you should be able to see all of the new files you added to the repository.
@@ -97,7 +99,7 @@ A `.gitignore` does what it sounds like - it tells `git` files or directories to
 If we can created our repository on GitHub and cloned it to our computer, we could have selected to create the repository with a `.gitignore.` 
 We could have told `GitHub` what language we were planning to use, and it would have given us a starting `.gitignore` with files we would be likely to want to ignore. 
 
-Navigate [here](https://github.com/github/gitignore/blob/main/Python.gitignore) to get a good starting gitignore for python. 
+Navigate [here](https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore) to get a good starting gitignore for python. 
 Copy the contents of this file to a file in your repository called `.gitignore`.
 
 Look at the contents of `.gitignore`
