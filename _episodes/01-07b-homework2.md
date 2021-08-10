@@ -160,6 +160,8 @@ This can lessen computational time significantly, since the energy calculation h
 A common cutoff distance is $$3 \sigma$$. 
 Do you agree with this choice of cutoff? Write a bit in a markdown cell under your plot about this cutoff choice. 
 
+**Answer this question** - How many pairwise energy calculations do we do not calculate for Configuration 1 without a cut-offof $$3\sigma$$? What about $$4\sigma$$?
+
 **Add a cutoff to your potential energy calculation**. 
 You should modify your Monte Carlo script so that the cutoff is a variable. Using the cutoff, the `LJ` potential energy should only be calculated `if` the distance between the particles is less than the cutoff, otherwise, the interaction energy between the two particles is approximated as `0`. This should go in your function `calculate_total_energy` and not in the `calculate_LJ` function.
 
@@ -182,7 +184,7 @@ $$
 
 1. Write a function `calculate_tail_correction` which calculates the tail correction.
     - Write an `assert` statement to check against the reported value from [NIST](https://www.nist.gov/mml/csd/chemical-informatics-research-group/lennard-jones-fluid-reference-calculations). The value you are looking for is $$U_{LRC}$$. We were using `Configuration 1` in class.
-1. **Answer this question** - How many pairwise energy calculations do we do without a cut-off? How many do we do with a cut-off of $$3\sigma$$? What about $$4\sigma$$?
+1. **Answer this question** - What is the difference in calculated system energy when there is no cut-off vs when using a cut-off of $3\sigma$?
 
 ### Periodic boundaries
 
@@ -248,7 +250,7 @@ Recalculate your total potential energy using the new `calculate_distance` funct
     
     
 ## Reviewing your teammate's change
-You will need to actually pull the changes from your teammate's branch when you are reviewing their pull request. You can pull their branch to your local computer by doing
+You may need too pull the changes from your teammate's branch when you are reviewing their pull request. You can pull their branch to your local computer by doing
 
 ~~~
 $ git switch main
@@ -258,4 +260,8 @@ $ git switch TEAMMATE_BRANCH
 {: .language-bash}
 
 You should then be able to see your teammates files. You should open their Jupyter notebook and review their code. If any changes are needed, leave this in your review on GitHub.
+
+An app called [ReviewNB](https://www.reviewnb.com/) has been added to your team repositories as well. 
+This should facilitate reviewing Jupyter notebooks. 
+It's a new tool we're trying out this year, so let us know how you like it!
 
