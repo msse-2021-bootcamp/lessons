@@ -18,14 +18,30 @@ keypoints:
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-# Introduction
+# Day 2 Topics
 
 <center>
-<div id="adobe-dc-view" style="width: 1000px; height: 565px;"></div>
+<div id="adobe-dc-view-1" style="width: 1000px; height: 565px;"></div>
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 <script type="text/javascript">
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-		var adobeDCView = new AdobeDC.View({clientId: "42179037890c48539eb91dc14951e000", divId: "adobe-dc-view"});
+		var adobeDCView = new AdobeDC.View({clientId: "42179037890c48539eb91dc14951e000", divId: "adobe-dc-view-1"});
+		adobeDCView.previewFile({
+			content:{location: {url: "https://msse-2021-bootcamp.github.io/lessons/files/day-2-topics.pdf"}},
+			metaData:{fileName: "pi_calculation.pdf"}
+		}, {embedMode: "SIZED_CONTAINER"});
+	});
+</script>
+ </center><br><br>
+
+# Introduction
+
+<center>
+<div id="adobe-dc-view-2" style="width: 1000px; height: 565px;"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script type="text/javascript">
+	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+		var adobeDCView = new AdobeDC.View({clientId: "42179037890c48539eb91dc14951e000", divId: "adobe-dc-view-2"});
 		adobeDCView.previewFile({
 			content:{location: {url: "https://msse-2021-bootcamp.github.io/lessons/files/pi_calculation.pdf"}},
 			metaData:{fileName: "pi_calculation.pdf"}
