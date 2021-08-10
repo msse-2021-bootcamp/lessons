@@ -182,7 +182,7 @@ $$
 
 1. Write a function `calculate_tail_correction` which calculates the tail correction.
     - Write an `assert` statement to check against the reported value from [NIST](https://www.nist.gov/mml/csd/chemical-informatics-research-group/lennard-jones-fluid-reference-calculations). The value you are looking for is $$U_{LRC}$$. We were using `Configuration 1` in class.
-1. **Answer this question** - How many pairwise energy calculations do we do without a cut-off? How many do we do with a cut-off of $3\sigma$? What about $4\sigma$?
+1. **Answer this question** - How many pairwise energy calculations do we do without a cut-off? How many do we do with a cut-off of $$3\sigma$$? What about $$4\sigma$$?
 
 ### Periodic boundaries
 
