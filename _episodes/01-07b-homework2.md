@@ -116,7 +116,6 @@ You should use this modified `calculate_total_energy` function to account for cu
 def calculate_total_pair_energy(coordinates, cutoff):
     total_energy = 0
     num_atoms = len(coordinates)
-    cutoff = 3
 
     for i in range(num_atoms):
         for j in range(i+1, num_atoms):
