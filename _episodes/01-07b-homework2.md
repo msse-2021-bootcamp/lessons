@@ -181,7 +181,9 @@ $$ U_{tail} = \frac{8 \pi N^2}{3 V}
 	- \left(\frac{1}{r_c} \right)^3 \right]
 $$
 
-1. Write a function `calculate_tail_correction` which calculates the tail correction.
+where $$V$$ is the volume of the simulation box, and $$N$$ is the number of particles. 
+
+1. Write a function `calculate_tail_correction` which calculates the tail correction. Your function should have `box_length`, `n_particles` (number of particles) and `cut-off` as function parameters. You can calculate the volume of the box from the `box_length`. Assume a cubic box, so volume is equal to `box_length**3`.
     - Write an `assert` statement to check against the reported value from [NIST](https://www.nist.gov/mml/csd/chemical-informatics-research-group/lennard-jones-fluid-reference-calculations). The value you are looking for is $$U_{LRC}$$. We were using `Configuration 1` in class.
 1. **Answer this question** - What is the difference in calculated system energy when there is no cut-off vs when using a cut-off of $3\sigma$?
 
