@@ -34,6 +34,7 @@ We will continue today's script in the notebook from yesterday. Make sure you ha
 1. `calculate_distance` - should be the version written for homework which accounts for periodic boundaries.
 1. `calculate_total_energy` - should be version written for homework which has cutoff
 1. `read_xyz` - provided in class
+1. `calculate_tail_correctiion` - written for homework 
 
 Recall that our objective is to write a Monte Carlo simulation which we can use to estimate properties of a chemical system. Yesterday, we used MC integration to evaluate the area of the unit circle. 
 
