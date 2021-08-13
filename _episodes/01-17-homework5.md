@@ -46,7 +46,7 @@ Add the NumPy version of your code to your package.
 What is the best way to reduce the amount of repeated code when adding your NumPy functions?
 
 ### Unit Tests
-Make sure each of your tests (excluding `run_simulation`) has at least one unit test.
+Make sure each of your tests (excluding `run_simulation` and `read_xyz`) has at least one unit test. 
 
 ### Adding an `__init__.py` file
 Add an `__init__.py` file to your package. 
