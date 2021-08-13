@@ -115,3 +115,5 @@ You can turn in your assignment using [this link](https://classroom.github.com/a
 You should derive your expressions using pencil + paper and upload scans or pictures of your solutions.
 To do this problem, you should fill the reduced unit expressions for appropriate quantities, and algebraically simplify the expressions.
 
+This assignment is due in one week, on **August 20, 2021.**
+
