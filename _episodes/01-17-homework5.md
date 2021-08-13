@@ -36,22 +36,29 @@ Everyone should read the Python documentation [section on Packages](https://docs
 
 ## Tasks
 
-### Adding NumPy Version to Package
+The tasks "Adding NumPy MC to Package" and "Unit Tests" are required. 
+For the third task, pick one of the remaining options "Adding an `__init__.py` file, or one of the tasks 
+from `Adding an Analysis Module`.
+
+### Adding NumPy MC to Package
 
 Add the NumPy version of your code to your package. 
 What is the best way to reduce the amount of repeated code when adding your NumPy functions?
+
+### Unit Tests
+Make sure each of your tests (excluding `run_simulation`) has at least one unit test.
 
 ### Adding an `__init__.py` file
 Add an `__init__.py` file to your package. 
 You should modify the `__init__.py` file to have the interface decided by your group during the discussion.
 
+
 ### Adding an Analysis Module
 
-You have two options for assignment concerning the analysis module. 
 You should add another file, `analysis.py` which has functions for analyzing your simulation results.
 You must pick one to complete the assignment, or you can do both for an extra challenge!
 
-### Calculation of the pressure
+#### Calculation of the pressure
 
 On the [NIST page](https://mmlapps.nist.gov/srs/LJ_PURE/mc.htm) showing benchmarks for the MC of LJ fluids, 
 a calculated pressure is also shown. 
@@ -77,7 +84,7 @@ $$
 Should this be added to your MC loop, or used as a post-processing analysis? (meaning that coordinates would be saved during similation and you perform calculate these values after)
 
 
-### Time Averaged RDF
+#### Time Averaged RDF
 On Day 2, part of your homework was to use the radial distribution function (RDF) to analyze molecular configurations.
 Create a module called `analysis.py` and add your radial distribution function.
 Usually, when a radial distribution function is used for analysis, it is taken as a time-average.
