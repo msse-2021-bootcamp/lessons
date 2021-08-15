@@ -69,7 +69,7 @@ The pressure calculation is similar to the energy calcuation.
 You will need a tail correction to be calculated based on the number of particles and the box size.
 Then the pressure can be calculated according to the equations in reduced units:
 
-$$ f^*(r) = \frac{48}{r} [(\frac{1}{r_{ij}})^{12} - (\frac{1}{r_{ij}})^{6}] $$
+$$ f^*(r) = \frac{48}{r^2} [(\frac{1}{r_{ij}})^{12} - (\frac{1}{r_{ij}})^{6}] \mathbf{r}^*_{ij}$$
 
 $$ 
 P^* = \frac{1}{3V^*} \left< 3 N T^* + \sum_{i < j} \textbf{f*}_i \cdot \textbf{r*}_i  \right>
@@ -121,7 +121,7 @@ alongside the energies. Note that the negative derivative of the energy is the f
 For the LJ potential, this is
 
 $$
-	\mathbf{f}\left(r_{ij} \right) = -\frac{dU \left(r_{ij} \right)}{dr} = \frac{48 \epsilon}{r_{ij}} \left[\left(\frac{\sigma}{r_{ij}}\right)^{12} -\frac{1}{2}\left(\frac{\sigma}{r_{ij}}\right)^{6} \right]
+	\mathbf{f}\left(r_{ij} \right) = -\frac{dU \left(r_{ij} \right)}{dr} = \frac{48 \epsilon}{r^2_{ij}} \left[\left(\frac{\sigma}{r_{ij}}\right)^{12} -\frac{1}{2}\left(\frac{\sigma}{r_{ij}}\right)^{6} \right] \mathbf{r}_{ij}
 $$
 
 And the tail correction
