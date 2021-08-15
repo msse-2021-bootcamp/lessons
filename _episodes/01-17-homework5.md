@@ -69,10 +69,10 @@ The pressure calculation is similar to the energy calcuation.
 You will need a tail correction to be calculated based on the number of particles and the box size.
 Then the pressure can be calculated according to the equations in reduced units:
 
-$$ P^*_{virial} = -48 [(\frac{1}{r_{ij}})^{12} - (\frac{1}{r_{ij}})^{6}] $$
+$$ f^*(r) = \frac{48}{r} [(\frac{1}{r_{ij}})^{12} - (\frac{1}{r_{ij}})^{6}] $$
 
 $$ 
-P^* = \frac{1}{3V^*}(3NT^* + P^*_{virial}) 
+P^* = \frac{1}{3V^*} \left< 3 N T^* + \sum_{i < j} \textbf{f*}_i \cdot \textbf{r*}_i  \right>
 $$
 
 
@@ -104,11 +104,25 @@ Volume      | $$V^* = V / \sigma^3 $$
 Temperature | $$T^* = k_{B} T / \epsilon $$
 Time        | $$t^* = t \sqrt{\frac{\epsilon}{ m \sigma^2}}$$
 
-The non-reduced expressions for pressure are:
+The non-reduced expressions for pressure is:
 
-$$ P = \frac{1}{3V} \left( 3 N k_B T + P_{virial} \right)$$
+$$
+	P = \frac{1}{3V} \left< 3 N k_B T + \sum_{i < j} \textbf{f}_i \cdot \textbf{r}_i  \right>
+$$
 
-$$ P_{virial} = \mathbf{f}\left(r_{ij} \right) = -\frac{dU \left(r_{ij} \right)}{dr} = - \frac{48 \epsilon}{r^2_{ij}} \left[\left(\frac{\sigma}{r_{ij}}\right)^{12} -\frac{1}{2}\left(\frac{\sigma}{r_{ij}}\right)^{6} \right] \mathbf{r}_{ij}$$
+Where 
+
+$$
+	\sum_{i < j} \textbf{f}_i \cdot \textbf{r}_i = - \sum_{i < j} \frac{dU\left(r_{ij} \right)}{dr} r_{ij} = W
+$$
+
+The term $$W$$ is known as the virial and it is a pairwise sum and it can be computed 
+alongside the energies. Note that the negative derivative of the energy is the force. 
+For the LJ potential, this is
+
+$$
+	\mathbf{f}\left(r_{ij} \right) = -\frac{dU \left(r_{ij} \right)}{dr} = \frac{48 \epsilon}{r_{ij}} \left[\left(\frac{\sigma}{r_{ij}}\right)^{12} -\frac{1}{2}\left(\frac{\sigma}{r_{ij}}\right)^{6} \right]
+$$
 
 And the tail correction
 
