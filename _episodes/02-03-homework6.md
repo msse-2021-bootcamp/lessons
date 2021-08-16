@@ -15,7 +15,7 @@ keypoints:
 </script>
 
 ## About the project
-Your assignment is to again approximate the intgral from the first individual
+Your assignment is to again approximate the integral from the first individual
 assignment, however this time using the midpoint method in C++.
 The integral you are looking
 to evaluate is:
@@ -26,22 +26,6 @@ This integral will evaluate to $$\frac{\pi}{4} $$.
 
 This is a group project, to be written in C++. The group should discuss
 the answers to the questions and write the README for the project repository.
-
-Team A
-1. Jasmine
-1. Camille
-1. Angela  
-[Repository](https://github.com/msse-2021-bootcamp/cpp-riemann-teamA)
-
-Team B
-1. Ron 
-1. Thenuka  
-[Repository](https://github.com/msse-2021-bootcamp/cpp-riemann-teamB)
-
-Team C
-1. Muhan
-1. Xudong  
-[Repository](https://github.com/msse-2021-bootcamp/cpp-riemann-teamC)
 
 The best way to do this assignment is for one person to share their screen
 and write the code while discussing the questions; the rest of the group

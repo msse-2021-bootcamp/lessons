@@ -18,8 +18,7 @@ keypoints:
 
 This should be completed by each group member individually (but you can
 discuss with your group). **Individual assignments are due one week after
-being assigned**. The due date for this assignment is **August 25, 2020**.
-The link for the assignment is [here](https://classroom.github.com/a/5paGSRsP).
+being assigned**. The link for the assignment is [here](https://classroom.github.com/a/5paGSRsP).
 
 Your individual assignment is to rewrite the first homework in C++.
 In that assignment, you wrote a python script to estimate the value
@@ -27,7 +26,7 @@ of the integral
 
 $$ \int_{0}^{1} \frac{1}{1 + x^2} dx $$
 
-which evaluates to $$\frac{\pi}{4} $$.
+using the Monte-Carlo method.
 
 In addition, we would like you to time three different versions of
 the code.
