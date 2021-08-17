@@ -18,7 +18,7 @@ keypoints:
 
 This should be completed by each group member individually (but you can
 discuss with your group). **Individual assignments are due one week after
-being assigned**. The link for the assignment is [here](https://classroom.github.com/a/5paGSRsP).
+being assigned**. The link for the assignment is [here](https://classroom.github.com/a/cKEFtPZ5).
 
 Your individual assignment is to rewrite the first homework in C++.
 In that assignment, you wrote a python script to estimate the value
