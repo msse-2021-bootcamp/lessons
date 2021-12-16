@@ -3,7 +3,7 @@ title: "Individual Homework Assignment #1"
 teaching: 0
 exercises: 60
 questions:
-- "What is the first individual homework assignmentt?"
+- "What is the first individual homework assignment?"
 objectives:
 - "Use a second method to calculate pi."
 ---
